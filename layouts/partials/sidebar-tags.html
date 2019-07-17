@@ -22,7 +22,7 @@
         
         
         {{ range first 20 (where .ByCount "Name" "in" $terms)  }}
-            <li><a href="{{ "tags/" | absLangURL }}{{ .Name | urlize }}" role="button"><span>{{ .Name }} ({{ .Count }})</span></a></li>
+            <li><a href="{{ "tags/" | absLangURL }}{{ .Name | urlize }}/" role="button"><span>{{ .Name }} ({{ .Count }})</span></a></li>
           
         {{ end }}
       </div>
