@@ -9,7 +9,9 @@
       <a href="{{ $.Site.Params.github }} " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
     {{ end }}
 
-
+    {{ if $.Site.Params.stack-overflow }}
+      <a href="{{ $.Site.Params.stack-overflow }}" target="_blank" rel="noopener"><i class="fab fa-stack-overflow mr-3" aria-hidden="true"></i></a>
+    {{ end }}
 
     {{ if $.Site.Params.facebook }}
       <a href="{{ $.Site.Params.facebook }}" target="_blank" rel="noopener"><i class="fab fa-facebook-f mr-3" aria-hidden="true"></i></a>
